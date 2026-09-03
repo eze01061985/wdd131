@@ -1,18 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 131</title>
-    <meta name="description" content="Home page for WDD 131 - Dynamic Web Fundamentals" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jose Ezequiel Flores Menendez</title>
+    <meta name="author" content="Jose Ezequiel Flores Menendez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals home page for Jose Ezequiel Flores Menendez with web development resources, personal introduction, HTML, CSS, JavaScript, and course projects.">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/jose-ezequiel-flores-menendez/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p25#p25" target="_blank" rel="noopener">Scripture</a>
+            <a href="project/">Final Project</a>
+        </nav>
+    </header>
 
-    <h1>WDD 131</h1>
+    <main>
+        <h1>Jose Ezequiel Flores Menendez</h1>
 
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    My name is Jose Ezequiel Flores Menendez. I am studying web development through
+                    WDD 131 and building practical skills with HTML, CSS, JavaScript, and responsive
+                    page layouts. I enjoy learning how small details in design and structure can make
+                    a website easier to read and use.
+                </p>
+                <img src="images/profile.svg" alt="Illustrated profile image for Jose Ezequiel Flores Menendez" width="160" height="160">
+            </div>
+
+            <h3>My Learning Goals</h3>
+            <div class="place-content">
+                <figure>
+                    <img src="images/web-layout.svg" alt="Illustration of a simple web page layout" width="180" height="120">
+                    <figcaption>HTML, CSS, and JavaScript</figcaption>
+                </figure>
+                <p>
+                    This course helps me practice semantic markup, page styling, and interactive
+                    features. My goal is to create organized projects that work well across different
+                    screen sizes and show steady progress throughout the semester.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <img class="resource-image" src="images/resources.svg" alt="Illustration of web development resource cards" width="220" height="140">
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                <li><a href="https://web.dev/" target="_blank" rel="noopener">web.dev</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Jose Ezequiel Flores Menendez | San Salvador de Jujuy, Jujuy, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
-
 </html>
