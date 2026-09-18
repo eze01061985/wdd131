@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore key facts and weather information for Madagascar.">
+  <meta name="author" content="Jose Ezequiel Flores Menendez">
+  <title>Madagascar | WDD 131</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Madagascar</h1>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Madagascar overview">
+      <picture>
+        <source srcset="images/madagascar-lemurs-large.webp" media="(min-width: 768px)" width="1600" height="760">
+        <img src="images/madagascar-lemur-small.webp"
+             alt="A ring-tailed lemur resting on a tree branch in Madagascar"
+             width="720"
+             height="1080"
+             fetchpriority="high">
+      </picture>
+
+      <section class="info-card data-card">
+        <h2>Data</h2>
+        <dl>
+          <dt>Area:</dt>
+          <dd>587,041 sq km</dd>
+          <dt>Population:</dt>
+          <dd>27,691,018</dd>
+          <dt>Capital:</dt>
+          <dd>Antananarivo</dd>
+          <dt>Languages:</dt>
+          <dd>Malagasy, French</dd>
+          <dt>Currency:</dt>
+          <dd>Malagasy Ariary</dd>
+          <dt>Time Zone:</dt>
+          <dd>UTC+3</dd>
+          <dt>Calling Code:</dt>
+          <dd>+261</dd>
+          <dt>Internet TLD:</dt>
+          <dd>.mg</dd>
+        </dl>
+      </section>
+
+      <section class="info-card weather-card">
+        <h2>Weather</h2>
+        <img class="weather-icon" src="images/weather-icon.svg" alt="Partly cloudy weather" width="96" height="96">
+        <dl>
+          <dt>Temperature:</dt>
+          <dd><span id="temperature">10</span> °C</dd>
+          <dt>Conditions:</dt>
+          <dd>Partly Cloudy</dd>
+          <dt>Wind:</dt>
+          <dd><span id="wind-speed">5</span> km/h</dd>
+          <dt>Wind Chill:</dt>
+          <dd><span id="wind-chill">N/A</span></dd>
+        </dl>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="current-year"></span> Jose Ezequiel Flores Menendez</p>
+    <p>Madagascar</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>
