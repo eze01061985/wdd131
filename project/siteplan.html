@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website plan for Explore Jujuy, a simple travel guide to places in Jujuy, Argentina.">
+  <meta name="author" content="Jose Ezequiel Flores Menendez">
+  <title>Explore Jujuy - Website Plan</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <p class="logo">Explore Jujuy</p>
+    <h1>Website Plan</h1>
+    <p>Jose Ezequiel Flores Menendez | WDD 131</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Site Name</h2>
+      <p>The name of my website is <strong>Explore Jujuy</strong>. I chose this name because the website will help people discover places in Jujuy, Argentina. The name is short and tells visitors what the site is about.</p>
+      <p>The site will use a simple text logo with the name Explore Jujuy, as shown at the top of this document.</p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>The website will be a small travel guide for people visiting Jujuy for the first time. It will introduce local places, show photos, and share basic tips to help visitors plan a trip.</p>
+      <h3>Planned Pages</h3>
+      <ul>
+        <li><strong>Home:</strong> A short introduction to Jujuy and three featured places.</li>
+        <li><strong>Places:</strong> Information about places such as Purmamarca, Tilcara, and Salinas Grandes. Visitors will be able to filter places by type and save favorites.</li>
+        <li><strong>Plan Your Visit:</strong> Travel tips and a form where visitors can choose their interests and create a simple trip summary.</li>
+      </ul>
+      <p>I will use an array of place objects to create the place cards. JavaScript functions will display the cards, filter them, and respond to the form. I will use localStorage to remember favorite places. Photos will be optimized and use lazy loading where appropriate. A references page linked in the footer will list the sources for photos and information.</p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>Which places should I visit on my first trip to Jujuy?</li>
+        <li>Where can I find information about towns and natural attractions?</li>
+        <li>Can I save the places I want to visit and make a simple trip plan?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Color Schema</h2>
+      <p>I chose colors that remind me of mountains and earth. These colors are also used in this plan.</p>
+      <ul class="colors">
+        <li><span class="swatch green"></span><strong>Dark green (#24483E):</strong> Header, footer, headings, and buttons. Text on green will be white.</li>
+        <li><span class="swatch clay"></span><strong>Clay (#98452D):</strong> Links and small accents.</li>
+        <li><span class="swatch cream"></span><strong>Cream (#FAF5EB):</strong> Page background.</li>
+        <li><span class="swatch dark"></span><strong>Dark gray (#292929):</strong> Paragraphs and lists.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <p class="heading-example">Georgia: Headings and site name</p>
+      <p>Arial: Paragraphs, navigation, lists, and form labels. This sentence is an example of the body font.</p>
+      <p>These fonts are easy to read and do not require a separate font download.</p>
+    </section>
+
+    <section>
+      <h2>Wireframes</h2>
+      <p>These simple diagrams show the planned home page layout. The boxes represent content that will be added to the final website.</p>
+      <h3>Mobile View</h3>
+      <figure class="wireframe mobile">
+        <div class="box">Explore Jujuy</div>
+        <div class="box">Home | Places | Plan Your Visit</div>
+        <div class="box hero-box">Main photo</div>
+        <div class="box">Welcome heading and introduction</div>
+        <div class="box">Featured place 1<br>Photo and description</div>
+        <div class="box">Featured place 2<br>Photo and description</div>
+        <div class="box">Featured place 3<br>Photo and description</div>
+        <div class="box">Plan Your Visit button</div>
+        <div class="box">Footer and references link</div>
+        <figcaption>On a phone, the content will appear in one column.</figcaption>
+      </figure>
+
+      <h3>Desktop View</h3>
+      <figure class="wireframe desktop">
+        <div class="wire-header">
+          <div class="box">Explore Jujuy</div>
+          <div class="box">Home | Places | Plan Your Visit</div>
+        </div>
+        <div class="box hero-box">Wide main photo</div>
+        <div class="box">Welcome heading and introduction</div>
+        <div class="wire-cards">
+          <div class="box">Featured place 1<br>Photo and description</div>
+          <div class="box">Featured place 2<br>Photo and description</div>
+          <div class="box">Featured place 3<br>Photo and description</div>
+        </div>
+        <div class="box">Plan Your Visit button</div>
+        <div class="box">Footer and references link</div>
+        <figcaption>On a larger screen, the featured places will appear in three columns.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Project Requirements</h2>
+      <p>I will check the HTML, CSS, mobile layout, color contrast, and Lighthouse results as I build the website.</p>
+      <p><a href="https://byui-cse.github.io/wdd131-ww-course/week06/project-description.html">WDD 131 final project description</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Explore Jujuy - Site Plan</p>
+    <p>Jose Ezequiel Flores Menendez</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #faf5eb;
+  color: #292929;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  padding: 1.5rem;
+  background-color: #24483e;
+  color: white;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.heading-example {
+  font-family: Georgia, serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h2,
+h3,
+.heading-example {
+  color: #24483e;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #b9b9b9;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: #98452d;
+}
+
+a:hover {
+  color: #24483e;
+}
+
+.heading-example {
+  font-size: 1.3rem;
+}
+
+.colors {
+  padding-left: 0;
+  list-style: none;
+}
+
+.swatch {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  border: 1px solid #292929;
+  vertical-align: middle;
+}
+
+.green {
+  background-color: #24483e;
+}
+
+.clay {
+  background-color: #98452d;
+}
+
+.cream {
+  background-color: #faf5eb;
+}
+
+.dark {
+  background-color: #292929;
+}
+
+.wireframe {
+  margin: 1rem auto;
+  padding: 0.75rem;
+  border: 2px solid #292929;
+  background-color: #faf5eb;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.mobile {
+  max-width: 300px;
+}
+
+.box {
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 0.25rem;
+  border: 1px solid #292929;
+  background-color: white;
+  overflow-wrap: anywhere;
+}
+
+.hero-box {
+  padding: 3rem 0.25rem;
+}
+
+.wire-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+}
+
+.wire-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+figcaption {
+  margin-top: 0.75rem;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
