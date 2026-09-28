@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #faf5eb;
+  background-color: #f4f5f8;
   color: #292929;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -13,7 +13,7 @@ body {
 header,
 footer {
   padding: 1.5rem;
-  background-color: #24483e;
+  background-color: #24324a;
   color: white;
   text-align: center;
 }
@@ -23,7 +23,7 @@ h2,
 h3,
 .logo,
 .heading-example {
-  font-family: Georgia, serif;
+  font-family: Verdana, sans-serif;
 }
 
 .logo {
@@ -34,7 +34,7 @@ h3,
 h2,
 h3,
 .heading-example {
-  color: #24483e;
+  color: #24324a;
 }
 
 main {
@@ -55,11 +55,11 @@ li {
 }
 
 a {
-  color: #98452d;
+  color: #653a91;
 }
 
 a:hover {
-  color: #24483e;
+  color: #24324a;
 }
 
 .heading-example {
@@ -80,16 +80,16 @@ a:hover {
   vertical-align: middle;
 }
 
-.green {
-  background-color: #24483e;
+.blue {
+  background-color: #24324a;
 }
 
-.clay {
-  background-color: #98452d;
+.purple {
+  background-color: #653a91;
 }
 
-.cream {
-  background-color: #faf5eb;
+.light {
+  background-color: #f4f5f8;
 }
 
 .dark {
@@ -100,7 +100,7 @@ a:hover {
   margin: 1rem auto;
   padding: 0.75rem;
   border: 2px solid #292929;
-  background-color: #faf5eb;
+  background-color: #f4f5f8;
   text-align: center;
   font-size: 0.85rem;
 }
