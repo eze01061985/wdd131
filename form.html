@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share your product review, rating, and useful features with this simple review form.">
+  <meta name="author" content="Jose Ezequiel Flores Menendez">
+  <title>Product Review | WDD 131</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header><h1>Product Review</h1></header>
+  <main>
+    <form method="get" action="review.html">
+      <p>Fields marked with * are required.</p>
+      <label for="product">Product Name *</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating *</legend>
+        <div class="ratings">
+          <label for="rating1"><span aria-hidden="true">☆</span><span class="rating-name">1 star</span><input type="radio" id="rating1" name="rating" value="1" required></label>
+          <label for="rating2"><span aria-hidden="true">☆☆</span><span class="rating-name">2 stars</span><input type="radio" id="rating2" name="rating" value="2" required></label>
+          <label for="rating3"><span aria-hidden="true">☆☆☆</span><span class="rating-name">3 stars</span><input type="radio" id="rating3" name="rating" value="3" required></label>
+          <label for="rating4"><span aria-hidden="true">☆☆☆☆</span><span class="rating-name">4 stars</span><input type="radio" id="rating4" name="rating" value="4" required></label>
+          <label for="rating5"><span aria-hidden="true">☆☆☆☆☆</span><span class="rating-name">5 stars</span><input type="radio" id="rating5" name="rating" value="5" required></label>
+        </div>
+      </fieldset>
+
+      <label for="installed">Date of Installation *</label>
+      <input type="date" id="installed" name="installed" required>
+
+      <fieldset class="features">
+        <legend>Which features did you find useful in the product?</legend>
+        <p>Check all that apply.</p>
+        <label for="durability"><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+        <label for="ease"><input type="checkbox" id="ease" name="features" value="ease-of-use"> Ease of Use</label>
+        <label for="performance"><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
+        <label for="design"><input type="checkbox" id="design" name="features" value="design"> Design</label>
+      </fieldset>
+
+      <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+      <textarea id="written-review" name="review" rows="6"></textarea>
+
+      <label for="username">Your Name <span class="optional">(Optional)</span></label>
+      <input type="text" id="username" name="username" autocomplete="name">
+
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Jose Ezequiel Flores Menendez | Argentina</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

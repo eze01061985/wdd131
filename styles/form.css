@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #202020;
+  line-height: 1.5;
+}
+
+header,
+footer {
+  padding: 1.25rem;
+  background-color: #300630;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+form,
+.confirmation {
+  padding: 1.25rem;
+  border: 1px solid #b9b0ba;
+  border-radius: 6px;
+  background-color: #d8d0d9;
+}
+
+form > label,
+legend {
+  font-weight: bold;
+}
+
+form > label {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea,
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #777;
+  background-color: white;
+  color: #202020;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.ratings label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.rating-name {
+  font-size: 0.75rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  accent-color: #300630;
+}
+
+.features p {
+  margin: 0.25rem 0;
+  font-style: italic;
+}
+
+.features label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.optional,
+a {
+  color: #34226d;
+}
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: #f4f4f4;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #300630;
+  color: white;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 3px solid #34226d;
+  outline-offset: 3px;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 500px) {
+  form,
+  .confirmation {
+    padding: 2rem;
+  }
+
+  .ratings label {
+    font-size: 1.1rem;
+  }
+}
