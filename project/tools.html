@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore engines, art tools, and audio tools for a small game. Filter by category and save a personal list of favorites.">
+  <meta name="author" content="Jose Ezequiel Flores Menendez">
+  <title>Game Development Tools | Indie Game Starter</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/tools.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="header-content">
+      <a class="brand" href="index.html"><span aria-hidden="true">+</span> Indie Game Starter</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tools.html" aria-current="page">Tools</a>
+        <a href="getting-started.html">Getting Started</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+<section class="page-intro"><p class="eyebrow">BUILD YOUR TOOLBOX</p><h1>A few tools are enough.</h1><p>Start with one game engine. Add an art or audio tool when your project needs it. The descriptions below introduce what each tool does; follow the official links for tutorials and current requirements.</p></section>
+<section aria-labelledby="tools-heading">
+  <h2 id="tools-heading">Explore the tools</h2>
+  <div class="filters">
+    <label for="category">Category
+      <select id="category"><option value="all">All tools</option><option value="engine">Game engines</option><option value="art">Art</option><option value="audio">Audio</option></select>
+    </label>
+    <label class="check-label" for="favorites-only"><input id="favorites-only" type="checkbox"> Show only favorites</label>
+  </div>
+  <p>Favorites stay in this browser. Use each card's button to save or remove a tool.</p>
+  <p id="tool-count" role="status"></p>
+  <p id="storage-message" role="status"></p>
+  <div class="cards tool-grid" id="tool-list"></div>
+  <noscript><p>Enable JavaScript to use the tool filters and favorites. You can also visit <a href="https://godotengine.org/features/">Godot</a>, <a href="https://gdevelop.io/">GDevelop</a>, <a href="https://krita.org/en/features/">Krita</a>, and <a href="https://www.audacityteam.org/">Audacity</a> directly.</p></noscript>
+</section>
+<section><h2>How to choose your first engine</h2><ol class="steps"><li><h3>Choose the kind of game.</h3><p>A small 2D idea gives you a clear first task. Check that the engine supports the type of project you want to make.</p></li><li><h3>Try a short tutorial.</h3><p>Make something move and respond to input. Notice whether you prefer writing scripts or working with visual events.</p></li><li><h3>Stay with one tool for a small project.</h3><p>Switching engines every day makes it hard to finish. Build a tiny prototype before deciding whether a tool fits your way of learning.</p></li></ol></section>
+<section class="callout"><h2>Remember the assets</h2><p>Images, music, and sound effects have their own licenses. Before using downloaded assets, check the permission and credit requirements. Keep a list of the creator, source link, and license with your project.</p><a href="references.html">Read this site's sources</a></section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Indie Game Starter · Jose Ezequiel Flores Menendez</p>
+    <p><a href="references.html">References</a> · <a href="siteplan.html">Site Plan</a></p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+

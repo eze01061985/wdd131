@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Follow a simple indie game development process and save a beginner project plan in your browser.">
+  <meta name="author" content="Jose Ezequiel Flores Menendez">
+  <title>Plan Your First Game | Indie Game Starter</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/planner.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="header-content">
+      <a class="brand" href="index.html"><span aria-hidden="true">+</span> Indie Game Starter</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tools.html">Tools</a>
+        <a href="getting-started.html" aria-current="page">Getting Started</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+<section class="page-intro"><p class="eyebrow">FROM IDEA TO FIRST BUILD</p><h1>Make a game you can finish.</h1><p>The first goal is a playable version of one idea. Better art and extra features can come later.</p></section>
+<section><h2>Five steps for a small project</h2><ol class="steps">
+<li><h3>Write one clear goal.</h3><p>Describe what the player does and how they win. For example: “Jump across three platforms and reach the flag.” Avoid adding several different game types.</p></li>
+<li><h3>Build a basic prototype.</h3><p>Use simple shapes while you test movement and rules. Make sure the main action works before spending time on detailed artwork.</p></li>
+<li><h3>Add feedback.</h3><p>Show when something happens: a score changes, a card turns over, or a finish message appears. If you use sound, also give the player a visual cue.</p></li>
+<li><h3>Play, test, and fix.</h3><p>Try both normal actions and mistakes. Can the player get stuck? Can they restart? Watch another person play and improve the confusing parts.</p></li>
+<li><h3>Share a small finished version.</h3><p>Include the controls, a clear start and end, and credits for any assets you used. Test the exported game on the device you want people to use.</p></li>
+</ol></section>
+<section class="planner" aria-labelledby="planner-heading">
+  <h2 id="planner-heading">My first game plan</h2>
+  <p>Fill in the required fields marked *. Your plan is saved only in this browser; it is not sent to a server.</p>
+  <form id="game-form">
+    <label for="game-name">Game name *<input id="game-name" name="game-name" type="text" maxlength="60" required></label>
+    <label for="game-type">Project type *<select id="game-type" name="game-type" required><option value="" disabled selected>Select a project type</option><option value="platformer">One-screen platformer</option><option value="maze">Find the exit</option><option value="memory">Match three pairs</option></select></label>
+    <label for="game-goal">What does the player need to do? *<textarea id="game-goal" name="game-goal" rows="3" maxlength="300" required></textarea></label>
+    <label for="session-length">Minutes per practice session *<input id="session-length" name="session-length" type="number" min="10" max="120" step="5" value="30" required></label>
+    <button type="submit">Save my game plan</button>
+  </form>
+  <noscript><p>JavaScript is needed to create and save a plan. You can still use the five steps above to write a plan on paper.</p></noscript>
+  <p id="plan-status" role="status"></p>
+  <div id="saved-plan" hidden><h3>Your starting plan</h3><p id="plan-output"></p><button type="button" id="clear-plan" class="secondary">Delete saved plan</button></div>
+</section>
+<section class="callout"><h2>A useful first milestone</h2><p>Try to finish a version with a start, one challenge, a win condition, and a restart. A small complete game is a good place to learn before planning a larger one.</p><a href="tools.html">Choose tools for your plan</a></section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Indie Game Starter · Jose Ezequiel Flores Menendez</p>
+    <p><a href="references.html">References</a> · <a href="siteplan.html">Site Plan</a></p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+
